@@ -11,8 +11,7 @@ public class Main {
             JFrame frame = new JFrame("Control TV");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setContentPane(ui.getMainPanel());
-            //frame.setSize(800, 600);
-            frame.pack(); //size
+            frame.setSize(300, 250);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
