@@ -90,30 +90,24 @@ public class Control_UI {
         comboBoxInput.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                InputSourceTV selected = (InputSourceTV) comboBoxInput.getSelectedItem();
-                inputSource.setText(selected.name());
+                Input selected = (Input)comboBoxInput.getSelectedItem();
+                inputS.setText(selected.name());
 
-                switch (selected)
-                {
-                    case AV -> inputSource.setForeground(Color.BLACK);
-                    case Netflix -> inputSource.setForeground(Color.BLUE);
-                    case HBO -> inputSource.setForeground(Color.RED);
-                    case Youtube -> inputSource.setForeground(Color.GREEN);
-                    case RTVC -> inputSource.setForeground(Color.YELLOW);
-                    case HDMI -> inputSource.setForeground(Color.CYAN);
-                    case WIFI -> inputSource.setForeground(Color.PINK);
-                }
-
+            switch (selected){
+                case AV -> inputS.setForeground(Color.BLACK);
+                case HBO -> inputS.setForeground(Color.BLUE);
+                case Netflix -> inputS.setForeground(Color.CYAN);
+                case Youtube -> inputS.setForeground(Color.GREEN);
+                case RTVC -> inputS.setForeground(Color.DARK_GRAY);
+                case HDMI -> inputS.setForeground(Color.MAGENTA);
+                case WIFI -> inputS.setForeground(Color.ORANGE);
             }
+
+        }
         });
     }
         public JPanel getMainPanel()
         {
             return mainPanel;
         }
-
-
-}
-
-
-
+    }
