@@ -1,5 +1,5 @@
 package Control;
 
-public enum InputSourceTV {
+public enum Input {
     AV, Netflix, HBO, Youtube, RTVC, HDMI, WIFI
 }
